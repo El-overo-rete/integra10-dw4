@@ -36,7 +36,7 @@ app.post('/series' , async (req, res) => {
     }
 );
 
-app.get('/' , async (req, res) => {
+app.get('/series' , async (req, res) => {
     try {
     const series = await Serie.find();
     res.json(series);
@@ -71,3 +71,4 @@ app.listen(PORT, () => {
     console.log(`Servidor iniciado en http://localhost:${PORT}`)
     }
 );  
+
